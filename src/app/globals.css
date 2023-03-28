@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton:wght@300&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'Anton', sans-serif;
+  font-family: sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,

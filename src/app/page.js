@@ -1,13 +1,24 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+"use client"
+import { useState } from "react";
 
+import Header from "./header";
+import SideBar from "./sidebar";
+import Content from "./content";
+import "./home.css";
 export default function Home() {
-  return ( 
+  const [active, setActive] = useState("ABOUT");
+  return (
     <>
-    <h1>HELLO</h1>
-    </> 
-      
-
-      
-  )
+      <div className="homecontainer">
+        {/* <img style={{height:'100%',width:'100%'}} src='/images/backgroundexclamation.jpg' /> */}
+        <div className="homesubcontainer">
+          <Header />
+          <div className="flex ">
+            <SideBar active={active} setActive={setActive}/>
+            <Content active={active}/>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

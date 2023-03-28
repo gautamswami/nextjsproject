@@ -1,0 +1,83 @@
+body{
+  height: 100vh;
+  padding: 2rem;
+
+}
+.homecontainer{
+  height: 100%;
+
+   background-image: url('/images/3dlinesbackground.jpg');
+  background-size: cover;
+    box-shadow: 1px -1px 20px 2px #1f1e1eb5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.homesubcontainer{
+  border-radius: 10px;
+
+  height: 100%;
+  background: #00000045;
+}
+.hellotext{
+display: inline-block;
+transform: rotate(180deg);
+transition: 900ms ease all;
+cursor: pointer;
+   color: rgb(0, 0, 0);
+   /* text-shadow: 3px 0px 9px #a4a4f8;*/
+   text-shadow:0 0 8px #c59efc;
+   letter-spacing: 2px;
+}
+.headercontainer{ 
+    margin: 1rem; 
+}
+.hellodiv:hover .hellotext{
+    letter-spacing: 4px;
+    text-shadow:
+    -1px -1px 0 #c29cfb,
+  -1px -1px 0 #c29cfb,  
+   1px -1px 0 #c29cfb,
+   -1px 1px 0 #c29cfb,
+    1px 1px 0 #c29cfb;
+}
+.helloimage{
+transition: 300ms ease all;
+cursor: pointer;
+}
+.helloimage:hover{
+transform: rotate(360deg);
+}
+.sidebarul{
+  padding: 2rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+    margin: 1rem; 
+  margin: 1rem;
+}
+.sidebarli{
+  text-shadow: 20px -2px 3px #bd9ce5;
+    color: transparent;
+    cursor: pointer;
+  transition: 600ms ease all;
+  font-size: 1.5em;
+}
+.sidebarliactive{
+text-shadow: 20px -2px 0px #e1b3ff;
+color: transparent;
+cursor: pointer;
+font-size: 1.6em;
+
+transition: 600ms ease all;
+}
+.sidebarli:hover{
+text-shadow: 20px -2px 0px #e1b3ff;
+
+}
+.translucentbg{
+  background: #4f4e4e36;
+  border-radius: 10px;
+}
