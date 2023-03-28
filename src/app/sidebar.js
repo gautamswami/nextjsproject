@@ -5,9 +5,10 @@ export default function SideBar({active,setActive}) {
   return (
     <>
       <ul className="sidebarul translucentbg">
-        {lidata?.map((names) => {
+        {lidata?.map((names,id) => {
           return (
             <li
+            key={id}
               className={active === names ? "sidebarliactive" : "sidebarli"}
               onClick={() => {
                 setActive(names);

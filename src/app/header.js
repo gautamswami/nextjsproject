@@ -4,7 +4,7 @@ export default function Header() {
     <>
     <div className="flex justify-between items-center p-3 headercontainer translucentbg"> 
       <div  className="inline-flex items-center gap-3 p-4 hellodiv">
-        <img className="w-16 helloimage" src="/icons/undraw_breakfast_psiw.svg" />
+        <img className="w-16 helloimage" alt='logo' src="/icons/undraw_breakfast_psiw.svg" />
         <h1 className="hellotext text-4xl font-semibold">HELLO !</h1>
       </div>
       <div>
