@@ -9,7 +9,7 @@ export default function Home() {
   const [active, setActive] = useState("ABOUT");
   return (
     <>
-      <div className="homecontainer">
+      <div className="homecontainer overflow-scroll">
         {/* <img style={{height:'100%',width:'100%'}} src='/images/backgroundexclamation.jpg' /> */}
         <div className="homesubcontainer">
           <Header />

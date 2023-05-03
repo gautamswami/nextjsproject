@@ -81,3 +81,24 @@ text-shadow: 20px -2px 0px #e1b3ff;
   background: #4f4e4e36;
   border-radius: 10px;
 }
+.rotate_animation {
+  animation: move;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* presentational styles */
+.rotate_animation {
+  border:2px dashed blue;
+  border-radius:50%;
+}
